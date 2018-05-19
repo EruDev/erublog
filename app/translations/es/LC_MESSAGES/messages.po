@@ -1,0 +1,135 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-05-18 19:33+0800\n"
+"PO-Revision-Date: 2018-05-18 17:54+0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: app/__init__.py:21
+msgid "Please log in to access this page."
+msgstr ""
+
+#: app/email.py:22
+msgid "[EruDevblog] reset your password"
+msgstr ""
+
+#: app/forms.py:9 app/forms.py:16 app/forms.py:35
+msgid "Username"
+msgstr ""
+
+#: app/forms.py:10 app/forms.py:18
+msgid "Password"
+msgstr ""
+
+#: app/forms.py:11
+msgid "Remember Me"
+msgstr ""
+
+#: app/forms.py:12
+msgid "Sign In"
+msgstr ""
+
+#: app/forms.py:17 app/forms.py:56
+msgid "Email"
+msgstr ""
+
+#: app/forms.py:20 app/forms.py:62
+msgid "Repeat Password"
+msgstr ""
+
+#: app/forms.py:21
+msgid "Register"
+msgstr ""
+
+#: app/forms.py:26 app/forms.py:47
+msgid "Please use a different username."
+msgstr ""
+
+#: app/forms.py:31
+msgid "Please use a different email address."
+msgstr ""
+
+#: app/forms.py:36
+msgid "About Me"
+msgstr ""
+
+#: app/forms.py:37
+msgid "submit"
+msgstr ""
+
+#: app/forms.py:51
+msgid "Say something"
+msgstr ""
+
+#: app/forms.py:52
+msgid "Submit"
+msgstr ""
+
+#: app/forms.py:57 app/forms.py:63
+msgid "Request Password Reset"
+msgstr ""
+
+#: app/forms.py:61
+msgid "password"
+msgstr ""
+
+#: app/routes.py:29
+msgid "You post is now live!"
+msgstr ""
+
+#: app/routes.py:58
+msgid "invalid username or password!"
+msgstr ""
+
+#: app/routes.py:84
+msgid "Congratulations, you are now a registered user!"
+msgstr ""
+
+#: app/routes.py:109
+msgid "You changes have been saved."
+msgstr ""
+
+#: app/routes.py:122 app/routes.py:138
+#, python-format
+msgid "User %(username)s not found."
+msgstr ""
+
+#: app/routes.py:125
+msgid "You cannot follow yourself!"
+msgstr ""
+
+#: app/routes.py:129
+#, python-format
+msgid "You are following %(username)s!"
+msgstr ""
+
+#: app/routes.py:141
+msgid "You cannot unfollow yourself!"
+msgstr ""
+
+#: app/routes.py:145
+#, python-format
+msgid "You are not following %(username)s!"
+msgstr ""
+
+#: app/routes.py:158
+msgid "Check your email for the instructions to reset your password"
+msgstr ""
+
+#: app/routes.py:174
+msgid "Your password has been reset."
+msgstr ""
+

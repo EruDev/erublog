@@ -1,5 +1,8 @@
 import os
+from dotenv import load_dotenv
+
 base_dir = os.path.abspath(os.path.dirname(__file__))
+load_dotenv(os.path.join(base_dir, '.env'))
 
 
 class Config(object):
@@ -8,6 +11,7 @@ class Config(object):
         'sqlite:///' + os.path.join(base_dir, 'app.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False    # 用于设置数据发生变更之后是否发送信号给应用
     POSTS_PER_PAGE = 10
+    LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
     MAIL_SERVER = 'smtp.qq.com'
     MAIL_PORT = 465
     MAIL_USE_SSL = True

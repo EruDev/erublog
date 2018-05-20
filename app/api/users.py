@@ -6,13 +6,14 @@ from app.api.auth import token_auth
 from app.api.errors import bad_request
 
 
-@bp.route('/users/<int:id>', methods=['GET', 'POST'])
+@bp.route('/users/<int:id>', methods=['GET'])
 @token_auth.login_required
 def get_user(id):
     return jsonify(User.query.get_or_404(id).to_dict())
 
 
 @bp.route('/users', methods=['GET'])
+@token_auth.login_required
 def get_users():
     page = request.args.get('page', 1, type=int)
     per_page = min(request.args.get('per_page', 10, type=int), 100)

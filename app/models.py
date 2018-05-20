@@ -55,7 +55,7 @@ class PaginatedAPIMixin(object):
             'items': [item.to_dict() for item in resources.items],
             '_meta': {
                 'page': page,
-                'per_page': page,
+                'per_page': per_page,
                 'total_pages': resources.pages,
                 'total_items': resources.total
             },

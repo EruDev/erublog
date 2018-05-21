@@ -29,6 +29,7 @@
                 </form>
                 {% endif %}
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{ url_for('douban.douban') }}">{{ _('豆瓣电影') }}</a></li>
                     {% if current_user.is_anonymous %}
                     <li><a href="{{ url_for('auth.login') }}">{{ _('Login') }}</a></li>
                     {% else %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}douban - movie{% endblock %}
+
+{% block app_content %}
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="row">
+                {% for douban in doubans %}
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="{{ douban.pic }}" alt="图片未找到">
+                        <div class="caption">
+                            <h3>{{ douban.title }}</h3>
+                            <p>{{ douban.directors }}&nbsp;&nbsp;&nbsp;&nbsp;<strong>{{ douban.rate }}</strong></p>
+                            <p>
+                                <a class="btn btn-info" href="{{ douban.url }}">详情</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <nav aria-label="...">
+        <ul class="pager">
+            <li class="previous{% if not prev_url %} disabled{% endif %}">
+                <a href="{{ prev_url or '#' }}">
+                    <span aria-hidden="true">&larr;</span>{{ _('上一页') }}
+                </a>
+            </li>
+            <li class="next{% if not next_url %} disabled{% endif %}">
+                <a href="{{ next_url or '#' }}">
+                    {{ _('下一页') }} <span aria-hidden="true">&rarr;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+{% endblock %}

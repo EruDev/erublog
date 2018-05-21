@@ -242,3 +242,25 @@ class Notification(db.Model):
 
     def get_data(self):
         return json.loads(str(self.payload_json))
+
+
+class DouBan(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(128), index=True)
+    directors = db.Column(db.Text)
+    rate = db.Column(db.String(64))
+    pic = db.Column(db.Text)
+    url = db.Column(db.Text)
+
+    def to_json(self):
+        json_douban = {
+            'title': self.title,
+            'directors': self.directors,
+            'rate': self.rate,
+            'pic': self.pic,
+            'url': self.url
+        }
+        return json_douban
+
+    def __repr__(self):
+        return '<title: {}>'.format(self.title)

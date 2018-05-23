@@ -1,0 +1,411 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Peculiar a Personal Portfolio Flat Bootstarp responsive Website Template| HOME :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Peculiar Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- font links -->
+<!-- <link href='//fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'> -->
+<!-- <link href='//fonts.googleapis.com/css?family=Cinzel:400,700,900' rel='stylesheet' type='text/css'> -->
+<!-- /font links -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+
+<!--start-smoth-scrolling-->
+<!--animated-css-->
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+<!--animated-css-->  
+</head>
+<body>
+	<!--start-banner-->
+		<div class="banner" id="home">
+			<div  id="top" class="callbacks_container">
+			     <ul class="rslides" id="slider4">
+			       <li>
+	    				<div class="banner-1">
+						</div>
+					</li>
+					 <li>
+	    				<div class="banner-2">
+						</div>
+					</li>
+			     </ul>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="header">
+				<div class="logo">
+					<a href="index2.html">我的个人空间</a>
+				</div>
+				<div class="navigation">
+				 <span class="menu"></span> 
+					<ul class="navig">
+						<li><a href="index2.html" class="scroll">主页</a><span>|</span></li>
+						<li><a href="#about" class="scroll">关于我</a><span>|</span></li>
+						<li><a href="#portfolio" class="scroll">项目经验</a><span>|</span></li>
+						<li><a href="#contact" class="scroll">联系我</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="banner-bottom">
+				<ul>
+					<li><a href="#"><span class="twt"> </span></a></li>
+					<li><a href="#"><span class="t"> </span></a></li>
+					<li><a href="#"><span class="g"> </span></a></li>
+				</ul>
+			</div>
+		</div>	
+	<!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->
+		<!--Slider-Starts-Here-->
+				<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: false,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!--End-slider-script-->
+	<!--end-banner-->
+	<!-- About -->
+	<div class="about-me" id="about">
+		<h3 class="text-center slideanim">我的技能</h3>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<div class="mydetails slideanim text-center">
+						<img class="img-circle img-responsive" src="images/cat.jpg" alt="Generic placeholder image" width="200" height="200">
+						<h3>赵鹏飞</h3>
+						<p>Pythoner</p>
+						<div class="social-icons">
+							<a href="#"><span class="facebook"></span></a>
+							<a href="#"><span class="twitter"></span></a>
+							<a href="#"><span class="linkedin"></span></a>
+							<a href="#"><span class="googleplus"></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8 col-xs-12">
+					<div class="myskills slideanim">
+						<h3 class="text-center">个人技能</h3>
+						<p class="skill-text">利用<span style="font-family: FZShuTi">&nbsp;Flask</span>&nbsp;框架和<span style="font-family: FZShuTi">&nbsp;Bootstrap</span>&nbsp;编写了一个简单的可以发布个人动态小网站，并且使用网络爬虫爬回来的数据在网站中展示。(已上线）<br>Github:<a href="https://github.com/EruDev/erublog" style="font-family: FZShuTi">https://github.com/EruDev/erublog</a></p>
+						<div class="skill-info">
+							<div class="table-responsive">
+								<table class="table">
+									<tbody>
+										<tr>
+											<td><h4><span style="font-family: FZShuTi">MySQL</span>数据库</h4></td>
+											<td><span class="longline1"></span><span class="shortline1"></span></td>
+											<td><p></p></td>
+										</tr>
+										<tr>
+											<td><h4><span style="font-family: FZShuTi">Python</span>编程</h4></td>
+											<td><span class="longline2"></span><span class="shortline2"></span></td>
+											<td><p></p></td>
+										</tr>
+										<tr>
+											<td><h4>网络爬虫</h4></td>
+											<td><span class="longline3"></span><span class="shortline3"></span></td>
+											<td><p></p></td>
+										</tr>
+										<tr>
+											<td><h4><span style="font-family: FZShuTi">Flask</span>框架</h4></td>
+											<td><span class="longline4"></span><span class="shortline4"></span></td>
+											<td><p></p></td>
+										</tr>
+										<tr>
+											<td><h4><span style="font-family: FZShuTi">Django</span>框架</h4></td>
+											<td><span class="longline5"></span><span class="shortline5"></span></td>
+											<td><p></p></td>
+										</tr>
+										<tr>
+											<td><h4><span style="font-family: FZShuTi">HTML5/CSS/JS</span></h4></td>
+											<td><span class="longline5"></span><span class="shortline5"></span></td>
+											<td><p></p></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /About -->
+	<!--start-free-->	 
+	<div class="free wow bounce" data-wow-delay="0.1s">
+		<div class="container">
+			<div class="free-main">
+				<h3>个人项目</h3>
+				<p><sup><img src="images/quote-1.png" alt=""></sup> 用Flask框架和网络爬虫建造的小站<sub><img src="images/quote-2.png" alt=""></sub> </p>
+			</div>
+		</div>
+	</div>
+	<!--end-free-->	 
+	<!-- Portfolio Starts Here -->
+	<div class="portfolios entertain_box  wow fadeInUp" data-wow-delay="0.4s" id="portfolio">
+		<div class="container">
+			<div class="portfolio-top">
+			<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logo web">全部图片</span></li>
+						<li><span class="filter" data-filter="app">登录注册</span></li>
+						<li><span class="filter" data-filter="photo">豆瓣电影</span></li>
+						<li><span class="filter" data-filter="card">消息</span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/2-1.png" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+						     <img src="images/2-1.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">
+						     	<ul>
+						     		<li><img src="images/2-1.png" alt=""/></li>
+						     		<li><img src="images/2-2.png" alt=""/></li>
+						     	</ul>
+						     	</h2>
+							   </div>
+							</a>
+		                </div>
+					</div>				
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/3-1.png" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+						     <img src="images/3-1.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">
+						     	<ul>
+						     		<li><img src="images/3-1.png" alt=""/></li>
+						     		<li><img src="images/3-2.png" alt=""/></li>
+						     	</ul>
+						     	</h2>
+							   </div>
+							</a>
+		               </div>
+					</div>		
+					<div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/1-1.png" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+						     <img src="images/1-1.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">
+						     	<ul>
+						     		<li><img src="images/1-1.png" alt=""/></li>
+						     		<li><img src="images/1-2.png" alt=""/></li>
+						     	</ul>
+						     	</h2>
+							   </div>
+							</a>
+		                </div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/3-2.png" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+						     <img src="images/3-2.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">
+						     <ul>
+						     		<li><img src="images/3-1.png" alt=""/></li>
+						     		<li><img src="images/3-2.png" alt=""/></li>
+						     	</ul>
+						     	</h2>
+						  	 </div></a>
+		                </div>
+		               
+					</div>	
+					<div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/1-2.png" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+						     <img src="images/1-2.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">
+						     	<ul>
+						     		<li><img src="images/1-1.png" alt=""/></li>
+						     		<li><img src="images/1-2.png" alt=""/></li>
+
+						     	</ul>
+						     	</h2>
+						  	 </div></a>
+		                </div>
+		               
+					</div>			
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/2-2.png" class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
+						     <img src="images/2-2.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">
+						     	<ul>
+						     		<li><img src="images/2-1.png" alt=""/></li>
+						     		<li><img src="images/2-2.png" alt=""/></li>
+						     	</ul>
+						     	</h2>
+						     	
+						  	 </div></a>
+		                </div>
+		                
+					</div>		
+		</div>
+		</div>
+	</div>
+</div>
+<link rel="stylesheet" href="css/swipebox.css">
+	<script src="js/jquery.swipebox.min.js"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+		</script>
+	<!-- Portfolio Ends Here -->
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	
+	var filterList = {
+	
+		init: function () {
+		
+			// MixItUp plugin
+		// http://mixitup.io
+		$('#portfoliolist').mixitup({
+			targetSelector: '.portfolio',
+			filterSelector: '.filter',
+			effects: ['fade'],
+			easing: 'snap',
+			// call the hover effect
+			onMixEnd: filterList.hoverEffect()
+		});				
+	
+	},
+	
+	hoverEffect: function () {
+	
+		// Simple parallax effect
+		$('#portfoliolist .portfolio').hover(
+			function () {
+				$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+				$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+			},
+			function () {
+				$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+				$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+			}		
+		);				
+	
+	}
+
+};
+
+// Run the show!
+	filterList.init();
+	
+});	
+</script>
+<div class="contact-me" id="contact">
+	<h3 class="text-center slideanim">联系我</h3>
+	<p class="text-center slideanim">如果你觉得需要我</p>
+	<div class="container">
+		<footer>
+			<div class="row">
+
+				<div class="col-md-6 slideanim">
+					<div class="contact-info">
+						<h4>联系信息</h4>
+						<p>现在人就在北京，随叫随到</p>
+						<div class="footer-info">
+							<div>
+								<i class="glyphicon glyphicon-globe"></i>
+								<p class="p1">台州温岭市</p>
+								<p class="p2">中国浙江</p>
+							</div>
+							<div>
+								<i class="glyphicon glyphicon-phone-alt"></i>
+								<p class="p1" style="font-family: STHupo;">15867620741</p>
+								<p class="p2">18600390741</p>
+							</div>
+							<div>
+								<i class="glyphicon glyphicon-envelope"></i>
+								<p class="p1">
+									<a href="mailto:myemail@something.com">zhaopf1996@gmail.com</a>
+								</p>
+								<p class="p2">
+									<a href="mailto:myemail@nothing.com" style="font-family: STHupo;">1027926875@qq.com</a>
+								</p>
+							</div>
+						</div>
+						<h5>个人从业经历</h5>
+						<p>2017年毕业，在台州自胜软件技术有限公司，2017年11月辞职</p>
+						<p>2017年11月份开始自学编程至今</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</div>
+<!-- /footer -->
+<!--Footer-Starts-Here-->
+	<div class="footer">
+		<div class="conatiner">
+			<div class="footer-text wow bounce" data-wow-delay="0.1s">
+				<p>TEMPLATE BY <a href="http://w3layouts.com/"> W3LAYOUTS</a></p>
+				<ul>
+					<li><a href="#"><span class="twt"> </span></a></li>
+					<li><a href="#"><span class="t"> </span></a></li>
+					<li><a href="#"><span class="g"> </span></a></li>
+				</ul>
+			</div>
+		</div>
+		 <script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+<!--Footer-Ends-Here-->
+</body>
+</html>

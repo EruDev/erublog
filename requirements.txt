@@ -27,7 +27,7 @@ Mako==1.0.7
 MarkupSafe==1.0
 psycopg2==2.7.3.1
 Pygments==2.2.0
-PyJWT==1.6.1
+PyJWT==2.4.0
 PyMySQL==0.8.1
 python-dateutil==2.7.3
 python-dotenv==0.8.2
